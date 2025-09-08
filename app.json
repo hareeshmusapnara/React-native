@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "appmaker", 
     "name": "APP_MAKER",
     "slug": "APP_MAKER",
     "version": "1.0.0",
@@ -24,6 +25,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
