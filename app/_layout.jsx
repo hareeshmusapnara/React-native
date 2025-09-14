@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, useColorScheme } from "react-native";
+import { useColorScheme } from "react-native";
 import { Stack } from "expo-router";
 import { Colors } from "../constants/Colors";
 import { StatusBar } from "expo-status-bar";
@@ -8,7 +8,7 @@ const Rootlayout = () => {
   const theme = Colors[colorScheme] ?? Colors.light;
   return (
     <>
-      <StatusBar value="auto" />
+      <StatusBar style="auto" />
 
       <Stack
         screenOptions={{
@@ -17,14 +17,11 @@ const Rootlayout = () => {
           headerTitleAlign: "center",
         }}
       >
+        <Stack.Screen name="(auth)" options={{ headerShown: false }} />
         <Stack.Screen name="index" options={{ title: "Home" }} />
-        <Stack.Screen name="about" options={{ title: "About" }} />
-        <Stack.Screen name="contact" options={{ title: "Contact" }} />
       </Stack>
     </>
   );
 };
 
 export default Rootlayout;
-
-const styles = StyleSheet.create({});

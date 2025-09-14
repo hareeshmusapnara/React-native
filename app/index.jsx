@@ -20,12 +20,12 @@ const Home = () => {
         My Wife Name Is Latha
       </ThemedText>
 
-      <Link href="/about" style={styles.link}>
-        <ThemedText>About Page</ThemedText>
+      <Link href="/login" style={styles.link}>
+        <ThemedText>Login Page</ThemedText>
       </Link>
 
-      <Link href="/contact" style={styles.link}>
-        <ThemedText>Contact Page</ThemedText>
+      <Link href="/register" style={styles.link}>
+        <ThemedText>Register Page</ThemedText>
       </Link>
     </ThemedView>
   );
@@ -39,9 +39,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  img: {
-    marginVertical: 20,
-  },
+
   title: {
     fontWeight: "bold",
     fontSize: 18,
